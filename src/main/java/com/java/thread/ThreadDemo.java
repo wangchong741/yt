@@ -50,7 +50,7 @@ public class ThreadDemo {
         int worker = 3;
         CountDownLatch countDownLatch=new CountDownLatch(worker);
         new Thread(()->{
-            System.out.println(" D 在等待ABC执行完");
+            System.out.println(" D 在等待ABC执行完1");
             try {
                 countDownLatch.await();
                 System.out.println("ABC已执行完，D开始");
