@@ -33,7 +33,7 @@ public class ThreadDemo {
         FutureTask<Integer> futureTask=new FutureTask<>(callable);
         new Thread(futureTask).start();
         try {
-            System.out.println("拿结果前");
+            System.out.println("拿结果前1");
             System.out.println(futureTask.get());
             System.out.println("拿结果后");
         } catch (InterruptedException e) {
