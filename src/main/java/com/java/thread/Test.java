@@ -3,6 +3,7 @@ package com.java.thread;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.StringJoiner;
 import java.util.stream.Collectors;
 
 /**
@@ -23,6 +24,18 @@ public class Test {
         System.out.println(collect);
         List<String> collect1 = collect.entrySet().stream().filter(x -> x.getValue() > 1).map(y -> y.getKey()).collect(Collectors.toList());
         System.out.println(collect1);
+
+        StringJoiner stringJoiner=new StringJoiner("");
+        stringJoiner.add("22");
+        stringJoiner.add("33");
+        System.out.println(stringJoiner);
+
+        System.out.println("users.iterator().next()");
+        while (users.iterator().hasNext()){
+            System.out.println(users.iterator().next());
+        }
+
+
     }
 
 }
